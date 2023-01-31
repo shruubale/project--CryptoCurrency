@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="signin.css">
+  
+</head>
+<body>
+  <div class="from_div" >
+    <h1>Login</h1>
+      <form onsubmit="validation()">
+     <label  class="lname">UserName:</label>
+ 
+      <input type="text" class="name" id="first"  name="username"><br>
+      <span id="span1" style="color: rgb(88, 32, 32);"></span><br>
+    
+     <label class="lname" >Password:</label> 
+     <input type="password" class="name" id="pass" name="password" autocomplete="off"><br>
+     <span id="span2" style="color: rgb(88, 32, 32); "></span><br>
+     
+     <input type="submit" class="button" value="Login"> <br>
+     
+     
+     <span id="span3" style="color: rgb(49, 32, 88); font-size: 20px; margin-left: 120px;">Welcome and Create Account</span><br>
+    </div>
+    
+   </form>
+   <script>
+         
+  function validation(e){
+    event.preventDefault();
+    let username=document.getElementById("first").value;
+  let password=document.getElementById("pass").value;
+  let spn3=document.getElementById("span3");
+  var user=localStorage.getItem(username);
+  var data=JSON.parse(user);
+  console.log(data)
+  if(user==null){
+    spn3.innerHTML="wrong username"
+  }else if(username==data.username && password==data.password){
+    spn3.innerHTML="succsesfull login "
+    window.location.href = 'home.html';
+  }else{
+    spn3.innerHTML="wrong password"
+  }
+
+  
+  }
+   </script>
+  
+  
+       
+ 
+</body>
+</html>

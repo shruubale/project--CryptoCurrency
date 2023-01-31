@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    ;
+}
+
+.main-container {
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr 1fr;
+    grid-template-columns: 100px 1fr 1fr 1fr 250px;
+
+    width: 100%;
+    height: 100vh;
+   column-gap:30px;
+   row-gap: 10px;
+
+}
+
+body {
+    background-color: rgb(214, 210, 210);
+}
+
+.navbar {
+    background-color: white;
+    grid-row: 1/ -1;
+
+
+}
+.navbar .fa{
+    color: grey;
+}
+
+.navbar ul li {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.navbar ul {
+    padding-top: 20vh;
+}
+
+.navbar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #bdb8d7;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: larger;
+    text-align: centers;
+}
+
+.navbar ul li:hover{
+  background-color:rgb(214, 210, 210);
+  
+}
+.navbar ul li .fa:hover {
+    color: purple;
+}
+
+
+
+.header {
+    background-color: white;
+    grid-column: 2/5;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.span1 {
+    float: left;
+    font-size: 15px;
+    padding: 12px;
+}
+
+.span2 {
+    float: right;
+    font-size: 15px;
+    padding: 10px;
+
+}
+
+.span2 button {
+    text-align: center;
+    background-color: white;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    height: 28px;
+    width: 145px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.item3 {
+    background-color:white;
+    grid-column: 5;
+    grid-row: 1 / -1;
+    position: relative;
+}
+ .logo img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+ }
+ .logo span {
+    position: absolute;
+    top: 56px;
+    left: 130px;
+    color: rgb(14, 61, 60);
+}
+.logo h5{
+position: absolute;
+top: 90px;
+left: 130px;
+color: blueviolet;
+}
+
+
+
+.resent_active h5{
+position: absolute;
+    top: 150px;
+    left: 15px;
+}
+.activity span{
+    position: absolute;
+    top: 180px;
+    left: 20px;
+
+
+}
+.activity p {
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    color: rgb(236, 197, 197);
+
+
+}
+.activity2 span{
+    position: absolute;
+    top: 230px;
+    left: 20px;
+
+
+}
+.activity2 p {
+    position: absolute;
+    top: 250px;
+    left: 40px;
+    color: rgb(236, 197, 197);
+
+
+}
+.activity3 span{
+    position: absolute;
+    top: 280px;
+    left: 20px;
+
+
+}
+.activity3 p {
+    position: absolute;
+    top: 310px;
+    left: 40px;
+    color: rgb(236, 197, 197);
+
+
+}
+.exchange{
+    position: absolute;
+    top: 400px;
+    padding: 10px;
+}
+.exchange em{
+    float: right;
+    color: #9286d1;
+}
+.exchange em{
+    float: right;
+    color: #4220eb;
+}
+.exchange input{
+    margin: 20px;
+    
+}
+
+.exchange p{
+    
+    color: #4220eb;
+    text-align: center;
+    position:relative;
+    
+}
+.msg{
+    position: absolute;
+    top: 650px;
+    left: 30px;
+    background-color: #4220eb;
+    width: 200px;
+    height: 150px;
+    
+
+}
+
+.msg button
+{
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    border-color: gray;
+    text-align: center;
+    font-size: 9px;
+    background: blueviolet;
+    cursor: pointer;
+}
+.msg img{
+    width: 60px;
+    margin-top: -30px;
+    border-radius: 50%;
+}
+.msg{
+    text-align: center;
+    color: aliceblue;
+    background-color: blueviolet;
+    box-shadow: 5px 5px 25px 1px rgb(150, 147, 147);
+}
+
+
+
+
+
+
+
+
+.item4 {
+    grid-column: 2/5;
+    display: grid;
+    grid-template-rows: 0.2fr;
+
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+
+
+}
+
+.price_span {
+    float: left;
+    font-size: 15px;
+    padding-left: 2px;
+}
+
+.price_span1 {
+    float: right;
+    margin-right: 10px;
+    background-color: rgb(239, 231, 231);
+    border: none;
+    margin: 5px;
+}
+
+.price_span2 {
+
+    font-size: 50px;
+
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 20px;
+
+}
+
+#pr {
+    margin-top: 100px;
+    display: flex;
+    padding-left: 10%;
+    text-align: center;
+}
+
+.price_tag span {
+    display: block;
+    border-right: 2px solid rgb(222, 190, 190);
+    width: 150px;
+    font-size: 15px;
+}
+
+.text {
+    color: rgb(222, 190, 190);
+}
+
+#tag_price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price-profit span {
+    display: block;
+    border-right: 2px solid  rgb(222, 190, 190);
+    width: 150px;
+    font-size: 15px;
+}
+
+#profit-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profit span {
+    display: block;
+    
+    width: 150px;
+    font-size: 15px;
+}
+
+#profitusd {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button {
+    border: 1px solid blue;
+    color: blue;
+    padding: 6px;
+    margin: 15px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.item5 {
+    background-color: white;
+    padding: 10px;
+
+}
+
+.portfolio1 {
+    float: right;
+    font-size: 15px;
+    margin-right: 10px;
+
+}
+
+.graph img {
+    height: 130px;
+    width: 350px;
+}
+
+.item6 {
+    background-color: white;
+    padding: 10px;
+}
+
+.item7 {
+    background-color: white;
+    padding: 10px;
+
+}
+
+.item8 {
+
+    grid-column: 2/5;
+    grid-column: 2/5;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.2fr 1fr;
+    column-gap: 10px;
+}
+
+.graph2 img {
+    width: 800px;
+    height: 250px;
+
+}
+
+.item4 .inner14 {
+    background-color: white;
+    border: none;
+    padding: 20px;
+
+
+}
+
+.item4 .inner14 button
+{
+    color: blueviolet;
+    border-color: blueviolet;
+    background-color: white;
+    cursor: pointer;
+}
+
+#image {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+
+.img {
+    height: 200px;
+    width: 225px;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 20px;
+    left: 350px;
+}
+
+.progress-bar ul li {
+    padding: 5px;
+    color: rgb(222, 190, 190);
+}
+
+
+
+.item4 .inner24 {
+    background-color: white;
+    position: relative;
+
+}
+
+.item8 .inner18 {
+    background-color: white;
+    margin-bottom: 10px;
+    width: 850px;
+    padding: 10px;
+   
+
+
+}
+
+.item8 .inner28 {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 20px;
+
+
+}
+
+.inner28 button{
+    float: right;
+    background-color: rgb(230, 226, 226);
+    color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.transaction span{
+    float: left;
+    padding: 15px 0px;
+    margin-left: 30px;
+    width: 100%;
+
+
+
+   
+}
+
+
+.transaction span em{
+    margin-left: 70px;
+    font-size: small;
+
+
+   
+}

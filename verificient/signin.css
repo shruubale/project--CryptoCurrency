@@ -1,0 +1,47 @@
+div{
+    border: 5px solid black;
+    padding: 30px 40px;
+    padding-left: 40px;
+    margin: auto;
+    height:500px;
+    width: 600px;
+    background-color: lightcyan;
+    background-position: center;
+    /* display: flex; */
+    text-align: center;
+    
+   
+}
+
+h1{
+    text-align: center;
+}
+
+.name{
+    width: 200px;
+    height: 25px;
+    margin: 15px;
+    margin-left: 45px;
+    border: 1px groove black;
+  font-weight: bolder;
+  display: inline;
+
+}
+
+.button{
+    padding: 5px;
+    margin: 10px;
+    margin-left: 150px;;
+    border: 3px groove ;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+.lname{
+    font-size: 25px;
+
+}
+.text{
+    text-align: center;
+}
